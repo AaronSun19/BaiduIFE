@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>任务四：定位和居中问题</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#box {
+				width: 400px;
+				height: 200px;
+				background-color: #ccc;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			
+			.quarter {
+				width: 50px;
+				height: 50px;
+				border-radius: 0 0 50px 0;
+				background-color: #fc0;
+			}
+			
+			.first {
+				position: absolute;
+				
+			}
+			.second{
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: rotate(180deg);
+			}
+			.first:hover,:;:hover{
+				box-shadow: 0 0 10px blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">
+			<div class="quarter first"></div>
+			<div class="quarter second"></div>
+		</div>
+	</body>
+
+</html>
