@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>任务七：实现常见的技术产品官网的页面架构及样式布局</title>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="stylesheet" type="text/css" href="cssreset.css" />
+	</head>
+
+	<body>
+		<!--页头-->
+		<header>
+			<div id="nav_logo">
+				<img src="image/logo.png" />
+				<h1>新世界</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">最新活动</a></li>
+					<li><a href="#">项目介绍</a></li>
+					<li><a href="#">爱心社区</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li>
+						<a href="#"><img src="image/login_img.png" />登录</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--banner-->
+		<div id="banner">
+			<h2>Time of new life</h2>
+			<p>新时代，年轻的人们让我们一起
+				<br />体验新生活，享受新生活</p>
+			<a href="#">开始体验</a>
+		</div>
+		<!--四栏tab选择结构-->
+		<div id="bannerTab">
+			<div class="inner">
+				<div id="bannerTab1">
+					<div class="inner">
+						<img src="image/banner_tab1.png" />
+						<p>打造全新世界观，让你更爱你的生活</p>
+					</div>
+				</div>
+				<div id="bannerTab2">
+					<div class="inner">
+						<img src="image/banner_tab2.png" />
+						<p>丰富多彩的公益活动，发挥新世界的主人公意识</p>
+					</div>
+				</div>
+				<div id="bannerTab3">
+					<div class="inner">
+						<img src="image/banner_tab3.png" />
+						<p>时尚的新理念，超前体验未知的生活</p>
+					</div>
+				</div>
+				<div id="bannerTab4">
+					<div class="inner">
+						<img src="image/banner_tab4.png" />
+						<p>完善的培养机制，培养你全新的世界观</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--横栏1-->
+		<div id="view1">
+			<img src="image/view1.png" />
+			<p>关于新世界，你不知道的还有什么？</p>
+		</div>
+		<!--地图-->
+		<div id="map">
+			<h3>查找新世界<span>城</span>市活动信息</h3>
+			<p>每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
+			<div id="mapcols">
+				<div id="select1">
+					<select name="nation">
+						<option value="china">中国</option>
+						<option value="japan">日本</option>
+						<option value="korea">韩国</option>
+					</select>
+				</div>
+				<div id="select2">
+					<select name="province">
+						<option value="beijing">北京市</option>
+						<option value="tianjin">天津市</option>
+						<option value="hebei">河北省</option>
+						<option value="shanxi">陕西省</option>
+						<option value="neimeng">内蒙古自治区</option>
+						<option value="liaoning">辽宁省</option>
+					</select>
+				</div>
+				<div id="select3">
+					<select name="city">
+						<option value="haidian">海淀区</option>
+						<option value="chaoyang">朝阳区</option>
+						<option value="fengtai">丰台区</option>
+					</select>
+				</div>
+				<div id="searchbtn">
+					<input type="submit" name="search" id="search" value="搜索" />
+				</div>
+			</div>
+
+		</div>
+		<!--活动-->
+		<div id="activity">
+			<div class="inner">
+				<div id="beijing">
+					<img src="image/beijing.png" />
+					<h4>北京活动</h4>
+					<p>新社区大联盟</p>
+				</div>
+				<div id="shanghai">
+					<img src="image/shanghai.png" />
+					<h4>上海活动</h4>
+					<p>夜上海新景观探索</p>
+				</div>
+				<div id="shenzhen">
+					<img src="image/shenzhen.png" />
+					<h4>深圳活动</h4>
+					<p>全新海岸线观点站</p>
+				</div>
+				<div id="hongkong">
+					<img src="image/hongkong.png" />
+					<h4>香港活动</h4>
+					<p>奢侈消费大派送</p>
+				</div>
+			</div>
+		</div>
+		<!--两栏图文结构-->
+		<div id="view2">
+			<div class="left">
+				<p>新世界</p>
+				<p>TIME</p>
+				<p>@新世界-北京</p>
+				<p>2016.04.01</p>
+				<img src="image/jiantou.png" />
+			</div>
+			<div class="right">
+				<div class="inner">
+					<div class="firstpage">
+						<h3>新世界/<span>01</span></h3>
+						<p>个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个新世界是个</p>
+						<a href="#">更多详情</a>
+					</div>
+
+					<div class="scrollspot">
+						<ul>
+							<li><img src="image/spot_yes.png" /></li>
+							<li><img src="image/spot_no.png" /></li>
+							<li><img src="image/spot_no.png" /></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--三栏图文结构-->
+		<div id="view3">
+			<div class="first">
+				<p>新时代
+					<br />关于爱<span>生活</span>的我们</p>
+				<a href="#" class="clickmore">查看更多</a>
+			</div>
+			<div class="second">
+				<p>新时代
+					<br />关于爱<span>生活</span>的我们</p>
+				<a href="#" class="clickmore">查看更多</a>
+			</div>
+			<div class="third">
+				<img src="image/jiantou.png" />
+			</div>
+		</div>
+		<!--表格头-->
+		<div id="formbanner">
+			<h3>成为我<span>们的</span>志愿者</h3>
+			<p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情
+				<br />那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+		</div>
+		<!--表格-->
+		<div id="form">
+			<div class="inner">
+				<div class="left">
+					<div id="agreement">
+						<h4>新世界志愿者协议</h4>
+						<p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，本着平等自愿的原则，想着创建新世界的美好愿景共同努力。</p>
+						<a href="#"><img src="image/moretab.png" />more</a>
+					</div>
+					<div id="interest">
+						<h4>新世界志愿者权利</h4>
+						<p>新世界志愿者享受新世界内部所有资源共享的权利，并且享受在新世界活动的优先参与资格</p>
+						<a href="#"><img src="image/moretab.png" />more</a>
+					</div>
+					<div id="moreclause">
+						<h4>更多条款</h4>
+						<a href="#"><img src="image/moretab.png" />more</a>
+					</div>
+				</div>
+				<div class="right">
+					<div class="first">
+						<div class="name">
+							姓名：
+							<input type="text" />
+						</div>
+						<div class="age">
+							年龄：
+							<input type="text" />
+						</div>
+					</div>
+					<div class="second">
+						<div class="context">
+							联系方式：
+							<input type="text" />
+						</div>
+						<div class="address">
+							联系地址:
+							<input type="text" />
+						</div>
+					</div>
+					<div class="discription">
+						<p>请简单描述您梦想的生活:</p>
+						<textarea name="textarea" rows="" cols=""></textarea>
+					</div>
+					<input type="submit" name="submit" id="submit" value="提交申请" />
+				</div>
+			</div>
+		</div>
+		<!--联系我们-->
+		<div id="connect">
+			<div class="inner">
+				<p>联系我们</p>
+				<p>为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品咨询
+					<br />也可以通过以下联系方式关注我们的动态</p>
+				<div class="form">
+					<input type="email" name="email" id="email" value="" placeholder="someone@email.com" />
+					<input type="submit" value="提交" />
+				</div>
+				<div>
+					<a href="#"><img src="image/qq.png" /></a>
+					<a href="#"><img src="image/weibo.png" /></a>
+					<a href="#"><img src="image/tweeter.png" /></a>
+					<a href="#"><img src="image/safari.png" /></a>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<footer>
+			<p>@2016新世界</p>
+			<a href="#">Back to top</a>
+		</footer>
+	</body>
+
+</html>
