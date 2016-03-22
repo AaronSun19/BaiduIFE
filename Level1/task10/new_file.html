@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>任务十：Flexbox 布局练习</title>
+		<style type="text/css">
+			@media only screen and (max-width:640px) {
+				.flexcontainer {
+						align-items: flex-start;
+				}
+				.flexitem:last-of-type {
+					order: -1;
+					margin-left: 10px;
+				}
+				.flexitem:nth-of-type(3) {
+					margin-left: 10px;
+				}
+				
+			}
+			
+			@media only screen and (min-width:640px) {
+				.flexcontainer {
+						align-items: center;
+				}
+				.flexitem:first-of-type {
+					margin-left: 10px;
+				}
+			}
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				box-sizing: border-box;
+			}
+			
+			.flexcontainer {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-between;
+				height: 300px;
+				widows: 640px;
+			}
+			
+			.flexitem {
+				width: 150px;
+				border: 1px solid #f00;
+			}
+			
+			.flexitem:first-of-type {
+				height: 120px;
+			}
+			
+			.flexitem:nth-of-type(2) {
+				height: 100px;
+			}
+			
+			.flexitem:nth-of-type(3) {
+				height: 40px;
+			}
+			
+			.flexitem:last-of-type {
+				height: 200px;
+				border: 1px solid #00f;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="flexcontainer">
+			<div class="flexitem"></div>
+			<div class="flexitem"></div>
+			<div class="flexitem"></div>
+			<div class="flexitem changeorder"></div>
+		</div>
+	</body>
+
+</html>
