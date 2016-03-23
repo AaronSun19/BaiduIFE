@@ -3,12 +3,15 @@
 	padding: 0px;
 	font-family: "微软雅黑"
 }
+img{
+	width: 100px;
+	height: 120px;
+}
 .div_css{
 	border:1px solid #999;
 	background-color: #eee;
 	margin:20px;
 	padding:20px;
-	height: 500px;
 	overflow:auto;
 }
 .div1_css{
@@ -34,10 +37,13 @@
 }
 .div2_css{
 	border:1px solid #999;
-	position: absolute;
-	left:300px;
-	right:200px;
+/*	position: absolute;*/
+/*	left:300px;
+	right:200px;*/
+	margin-left: 260px;
+	margin-right: 140px;
 	padding:20px;
+/*	margin-bottom: 20px; */
 	background-color:white;
 }
 .div3_css{
