@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>任务十三：零基础JavaScript编码（一）</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+  </head>
+<body>
+
+  <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+  <button id="button">确认填写</button>
+
+  <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+<script type="text/javascript">
+
+(function() {
+  /*	
+  在注释下方写下代码
+  给按钮button绑定一个点击事件
+  在事件处理函数中
+  获取aqi-input输入的值，并显示在aqi-display中
+  */
+ 
+ 
+// 下面是使用JQuery的代码
+//$("#button").click(function(){
+//	var a=$("#aqi-input").val()
+//  $("#aqi-display").text(a);
+//});
+
+
+//下面是使用Js的代码编写
+//第一种方法
+//document.getElementById("button").onclick=function(){
+//	document.getElementById("aqi-display").innerHTML=document.getElementById("aqi-input").value;
+//	
+//}
+
+//第二种方法
+document.getElementById("button").addEventListener("click",function(){
+	document.getElementById("aqi-display").innerHTML=document.getElementById("aqi-input").value;
+	
+});
+})();
+
+</script>
+</body>
+</html>

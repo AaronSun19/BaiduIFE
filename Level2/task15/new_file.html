@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>任务十五：零基础JavaScript编码（三）</title>
+	</head>
+
+	<body>
+
+		<ul id="source">
+			<li>北京空气质量：<b>90</b></li>
+			<li>上海空气质量：<b>70</b></li>
+			<li>天津空气质量：<b>80</b></li>
+			<li>广州空气质量：<b>50</b></li>
+			<li>深圳空气质量：<b>40</b></li>
+			<li>福州空气质量：<b>32</b></li>
+			<li>成都空气质量：<b>90</b></li>
+		</ul>
+
+		<ul id="resort">
+			<!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+		</ul>
+
+		<button id="sort-btn">排序</button>
+
+		<script type="text/javascript">
+			function getData() {
+				var data = new Array(); //新建一个data数组
+				var arr = document.getElementById('source').children; //新建一个arr数组并且将每个li放在arr中
+				for (var i = 0; i < arr.length; i++) {
+					data[i] = new Array();
+					var str = arr[i].innerHTML;
+					data[i][0] = str.substr(0, 2);
+					//					console.log(data[i][0]);
+					data[i][1] = str.substr(-6, 2);
+					//					console.log(data[i][1]);
+				}
+				return data;
+			}
+
+			function sortAqiData(data) {
+				data.sort(function(x, y) {
+					return y[1] - x[1];
+				});
+				return data;
+			}
+
+			function render(data) {
+				var num = document.getElementById("resort");
+				for (var i = 0; i < data.length; i++) {
+					var newElement = document.createElement('li');
+					newElement.innerHTML = "第"+(i+1)+"名:"+data[i][0] + "空气质量：<b>" + data[i][1] + "</b>";
+					num.appendChild(newElement);
+				}
+			}
+
+			function btnHandle() {
+				var aqiData = getData();
+				aqiData = sortAqiData(aqiData);
+				render(aqiData);
+			}
+
+			function init() {
+				// 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+				var click=document.getElementById("sort-btn");
+				click.onclick=btnHandle;
+			}
+			
+			init();
+		</script>
+	</body>
+
+</html>
